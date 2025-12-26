@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Homestays & Local Attractions</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+      padding: 60px 10%;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 40px;
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    .role {
+      margin: 25px auto;
+      padding: 25px;
+      width: 70%;
+      border-radius: 15px;
+      text-align: left;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .role:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4);
+    }
+
+    .role img {
+      width: 70px;
+      float: right;
+    }
+
+    .admin {
+      background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    }
+
+    .host {
+      background: linear-gradient(135deg, #7ee8fa, #80ff72);
+    }
+
+    .tourist {
+      background: linear-gradient(135deg, #f6d365, #fda085);
+    }
+
+    .guide {
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      color: #333;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 12px 24px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: white;
+      color: #00b4db;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Explore Homestays & Local Attractions</h1>
+
+  <div class="role admin" onclick="openPage('admin.html')">
+    <img src="images/admin.png" alt="Admin">
+    <h2>Admin</h2>
+    <p>Manage users, homestays, and platform content.</p>
+  </div>
+
+  <div class="role host" onclick="openPage('host.html')">
+    <img src="images/host.png" alt="Host">
+    <h2>Homestay Host</h2>
+    <p>List homestays, manage bookings, and assist guests.</p>
+  </div>
+
+  <div class="role tourist" onclick="openPage('tourist.html')">
+    <img src="images/tourist.png" alt="Tourist">
+    <h2>Tourist</h2>
+    <p>Book stays, explore attractions, and enjoy trips.</p>
+  </div>
+
+  <div class="role guide" onclick="openPage('guide.html')">
+    <img src="images/guide.png" alt="Guide">
+    <h2>Local Guide</h2>
+    <p>Guide tourists and share local culture insights.</p>
+  </div>
+
+  <a href="index.html">⬅ Back</a>
+
+  <script>
+    function openPage(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>
